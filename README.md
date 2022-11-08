@@ -189,3 +189,18 @@ subnet 10.21.2.0 netmask 255.255.255.0 {
 	option routers 10.21.2.2;
 }
 ```
+
+- /etc/bind/named.conf.options
+```
+options {
+	directory "/var/cache/bind";
+		
+	forwarders {
+		192.168.122.1;
+	};
+	allow-query{any;};
+	
+	auth-nxdomain no;
+	listen-on-v6 { any; };
+}
+```
