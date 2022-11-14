@@ -264,3 +264,14 @@ Setelah itu, Eden harus direstart agar mendapat lease.
 Hasil lease pada Eden :
 
 <img src="https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/Eden_lease.png?raw=true" width="600" height="200">
+
+
+Untuk setting dari proxy :
+1. Proxy Server
+
+   Lakukan Penginstalan Squid dan setup pada node Berlint
+   ```
+   apt-get install squid
+   mv /etc/squid/squid.conf /etc/squid/squid.conf.bak
+   ```
+3. 
