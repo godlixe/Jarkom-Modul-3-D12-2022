@@ -318,7 +318,7 @@ Untuk setting dari proxy :
    date -s "7 NOV 2022 09:00:00"
    lynx http://example.com
    ```
-   ![](SS-Modul-2/Eden_lease.png)
+   ![](SS_Modul_2/Eden_lease.png)
 # Permasalahan dalam Praktikum
 1. Speedtest tidak bisa digunakan karena speedtest menggunakan protocol http namun http diblok
 
