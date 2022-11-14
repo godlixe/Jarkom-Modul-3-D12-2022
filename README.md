@@ -318,7 +318,58 @@ Untuk setting dari proxy :
    date -s "7 NOV 2022 09:00:00"
    lynx http://example.com
    ```
-   ![](SS_Modul_2/Eden_lease.png)
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic1.png)
+   
+   ```
+   date -s "7 NOV 2022 09:00:00"
+   lynx https://example.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic2.png)
+   
+   ```
+   date -s "7 NOV 2022 09:00:00"
+   lynx https://loid-work.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic3.png)
+   
+   ```
+   date -s "7 NOV 2022 09:00:00"
+   lynx https://franky-work.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic4.png)
+   
+   Untuk Hari di luar jam kerja bukan libur
+   ```
+   date -s "7 NOV 2022 19:00:00"
+   lynx http://example.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic15.png)
+   
+   ```
+   date -s "7 NOV 2022 19:00:00"
+   lynx https://example.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic6.png)
+   
+   ```
+   date -s "7 NOV 2022 19:00:00"
+   lynx https://loid-work.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic7.png)
+   
+   ```
+   date -s "7 NOV 2022 19:00:00"
+   lynx https://franky-work.com
+   ```
+   
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic8.png)
 # Permasalahan dalam Praktikum
 1. Speedtest tidak bisa digunakan karena speedtest menggunakan protocol http namun http diblok
 
