@@ -274,4 +274,41 @@ Untuk setting dari proxy :
    apt-get install squid
    mv /etc/squid/squid.conf /etc/squid/squid.conf.bak
    ```
-3. 
+   Untuk Config squid dalam `/etc/squid/squid.conf`
+   ```
+   include /etc/squid/acl-bandwidth.conf # Untuk setting dari bandwidth limiter
+   http_port 8080
+   acl block_access_http url_regex -i 'http://' # Untuk pemblokiran HTTP
+   acl access_https url_regex -i 'https://' # Untuk pemblokiran HTTPS
+   acl available_working time M T H W F 08:00-17:00 # Setting waktu kerja untuk hari Senin - Jumat dari 08.00 - 17.00
+   acl sites_available_working dstdomain "/etc/squid/available-sites.acl" # Untuk sites loid-work.com dan franky-work.com
+   http_access allow sites_available_working available_working # Untuk membolehkan mengakses loid-work.com dan franky-work.com pada saat jam kerja
+   http_access deny sites_available_working # Untuk prohibit akses loid-work.com dan franky-work.com di luar jam kerja
+   http_access deny available_working # Prohibit akses pada saat jam kerja
+   http_access deny available_working access_https # Prohibit akses https pada jam kerja
+   http_access deny block_access_http # Prohibit akses http
+   http_access allow all
+   visible_hostname Berlint
+   ```
+   Untuk file `/etc/squid/acl-bandwidth.conf` (Bandwidth limiter)
+   ```
+   acl limited_time time SA 00:00-23:59 # Untuk hari sabtu dan minggu saja limiter
+   delay_pools 1
+   delay_class 1 1
+   delay_access allow limited_time # Enable limiter pada hari tersebut
+   delay_parameters 1 16000/16000 # Dilimit hingga 128Kbps atau 16KBps
+   ```
+   Untuk file `/etc/squid/available-sites.com`
+   ```
+   .loid-work.com
+   .franky-work.com
+   ```
+2. Proxy Client
+   Lakukan script ini untuk lynx dan enable proxy pada client `SSS`, `Garden`, dan `Eden`
+   ```
+   apt-get install lynx
+   apt install speedtest-cli
+   apt-get install ca-certificates
+   export http_proxy="http://10.21.2.3:8080"
+   export https_proxy="http://10.21.2.3:8080"
+   ```
