@@ -348,7 +348,7 @@ Untuk setting dari proxy :
    lynx http://example.com
    ```
    
-   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic15.png)
+   ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic5.png)
    
    ```
    date -s "7 NOV 2022 19:00:00"
