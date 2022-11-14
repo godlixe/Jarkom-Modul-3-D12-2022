@@ -5,9 +5,9 @@ Praktikum Jaringan Komputer Modul 2 (DHCP &amp; Proxy) 2022.
 
 | Nama                           | NRP        | Nomor Yang dikerjakan |
 | ------------------------------ | ---------- | --------------------- |
-| Hafizh Mufid Darussalam        | 5025201093 | -               |
-| Januar Evan Zuriel Banjarnahor | 5025201210 | - 		      |
-| Alexander 			 | 5025201247 | -                 |
+| Hafizh Mufid Darussalam        | 5025201093 | 5-7               |
+| Januar Evan Zuriel Banjarnahor | 5025201210 | 1 (Setting Proxy Client dan Server config)		      |
+| Alexander 			 | 5025201247 | 1-7                 |
 
 ### Topologi
 
