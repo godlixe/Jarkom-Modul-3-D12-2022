@@ -342,7 +342,7 @@ Untuk setting dari proxy :
    
    ![](https://github.com/godlixe/Jarkom-Modul-3-D12-2022/blob/main/SS%20Modul%202/pic4.png)
    
-   Untuk Hari di luar jam kerja bukan libur
+   Untuk Hari di luar jam kerja dan libur
    ```
    date -s "7 NOV 2022 19:00:00"
    lynx http://example.com
