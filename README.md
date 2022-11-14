@@ -269,7 +269,7 @@ Hasil lease pada Eden :
 Untuk setting dari proxy :
 1. Proxy Server
 
-   Lakukan Penginstalan Squid dan setup pada node Berlint
+   Lakukan Penginstalan Squid dan setup pada node `Berlint`
    ```
    apt-get install squid
    mv /etc/squid/squid.conf /etc/squid/squid.conf.bak
@@ -312,3 +312,13 @@ Untuk setting dari proxy :
    export http_proxy="http://10.21.2.3:8080"
    export https_proxy="http://10.21.2.3:8080"
    ```
+3. Testing
+   Untuk hari kerja
+   ```
+   date -s "7 NOV 2022 09:00:00"
+   lynx http://example.com
+   ```
+   !()[SS Modul 2/Eden_lease.png]
+# Permasalahan dalam Praktikum
+1. Speedtest tidak bisa digunakan karena speedtest menggunakan protocol http namun http diblok
+
